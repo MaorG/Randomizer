@@ -1,0 +1,14 @@
+{
+	"inputDir": "C:/school/misc/Randomizer/data/",
+	"outputDir": "C:/school/misc/Randomizer/rand/",
+	"repeats": 5,
+	"reverse": 0,
+	"staticOverlap": 0,
+	"dynamicOverlap": 0,
+	"randomSeed_off": 1,
+	"imageNames": [
+		["a1/pop1.tif", "a1/pop2.tif"],
+		["a1/pop2.tif", "a1/pop1.tif"],
+		["a2/pop3.tif", "a2/pop4.tif"]
+	]
+}
