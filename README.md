@@ -1,5 +1,5 @@
 # Randomizer
-mask randomization tool: Randomize object in mask relative to reference mask
+# mask randomization tool: Randomize objects in a mask relative to a reference mask
 
 function randomizeMasks(configFileName)
 
