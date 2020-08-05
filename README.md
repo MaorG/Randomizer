@@ -1,8 +1,6 @@
 # Randomizer
 mask randomization tool: Randomize object in mask relative to reference mask
 
-
-
 function randomizeMasks(configFileName)
 
 takes as input pairs of masks (each pair representing two populations).
@@ -12,8 +10,8 @@ for each pair, it randomizes one population objects (the "dynamic" objects) with
 finally it writes the randomized objects masks as an 8-bit b/w image.
 
 notes: 
-- in order to make later analysis simpler, for each randomized objects mask created, it writes a copy of the reference population with a matching naming scheme.
-- the randomization is performed by randomizing the location of objects in random order. if  while requiring that the locations are valid. if no valid location is found, object is not used.
+- in order to make later analysis simpler, for each randomized objects mask created, a copy of the reference population with a matching naming scheme is created.
+- the randomization is performed by randomizing the location of objects in random order, while requiring that the locations are valid. if no valid location is found, object is not used.
 
 
 input: configuration file name
@@ -27,7 +25,7 @@ input: configuration file name
 			"reverse": 0,
 			"staticOverlap": 0,
 			"dynamicOverlap": 0,
-			"randomSeed_off": 1,
+			"randomSeed": 1,
 			"imageNames": [
 				["a1/pop1.tif", "a1/pop2.tif"],
 				["a1/pop2.tif", "a1/pop1.tif"],
@@ -56,7 +54,7 @@ Example script:
 	> randomizeMasks(configName);
 
 
-written in MATLAB 2018b
+written in MATLAB version 2018b
 
 Maor Grinberg 2020
 
